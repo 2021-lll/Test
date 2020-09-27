@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+<!--        &lt;!&ndash;缓存配置的全局开关：如果这里设置成false，那么即便在映射器中配置开启也无济于事 &ndash;&gt;-->
+<!--        <setting name="cacheEnabled" value="true" />-->
+<!--        &lt;!&ndash;延时加载的全局开关 &ndash;&gt;-->
+<!--        <setting name="lazyLoadingEnabled" value="false" />-->
+<!--        &lt;!&ndash; 是否允许单一语句返回多结果集 &ndash;&gt;-->
+<!--        <setting name="multipleResultSetsEnabled" value="false" />-->
+    </settings>
+    <typeAliases>
+        <package name="com.test.auto.model"/>
+    </typeAliases>
+
+    <mappers>
+        <mapper resource="mapper/mysql.xml"></mapper>
+    </mappers>
+
+</configuration>

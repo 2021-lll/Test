@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+logging:
+  path: logs
+  file: mylog.log
+
+spring:
+  application:
+    name: requestController
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/auto?useUnicode=true&characterEncoding=UTF-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.test.auto.model
+  mapper-locations:
+    - mapper/*

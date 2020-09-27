@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name ="MyTest">
+    <test name ="addapi">
+        <classes>
+            <class name = "com.test.auto.testcase.addApiRequest">
+                <methods>
+                    <include name="test1"></include>
+                </methods>
+
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name = "com.test.auto.listener.ExtentTestNGIReporterListener"></listener>
+    </listeners>
+
+</suite>
