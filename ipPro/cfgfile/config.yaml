@@ -1,0 +1,32 @@
+url: https://cdn.myhuaweicloud.com/v3/auth/tokens
+data:
+  endpoint: cdn.myhuaweicloud.com #地区和终端节点
+  name: hwc25017321  #IAM用户所属帐号名
+  password: 1q2w3e4r1122  #IAM用户密码
+  projectname: xxx  #项目名称
+
+
+
+json: {
+    "auth": {
+      "identity": {
+        "methods": [
+          "password"
+        ],
+        "password": {
+          "user": {
+            "domain": {
+              "name": "hwc25017321" #
+            },
+            "name": "hwc25017321",
+            "password": "1q2w3e4r1122"
+          }
+        }
+      },
+      "scope": {
+        "domain": {
+          "name": "hwc25017321"
+        }
+      }
+    }
+  }
